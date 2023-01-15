@@ -67,6 +67,7 @@ class _ArticleCardWidgetState extends State<ArticleCardWidget> {
                             imageUrl: article.urlToImage!,
                             fit: BoxFit.cover,
                             height: CommonUtils.height(context)! * 0.3,
+                            width: double.infinity,
                             errorWidget: (context, url, error) => errorImage())
                         : errorImage(),
                     Positioned(
